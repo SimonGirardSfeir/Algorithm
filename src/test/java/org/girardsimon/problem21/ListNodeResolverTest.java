@@ -34,7 +34,7 @@ class ListNodeResolverTest {
     }
     @ParameterizedTest
     @MethodSource("listNodes")
-    void mergeTwoLists_should_merge_two_ListNode_into_ont(ListNode left, ListNode right,
+    void mergeTwoLists_should_merge_two_ListNode_into_one(ListNode left, ListNode right,
                                                           ListNode expected) {
         //When
         ListNode actual = ListNodeResolver.mergeTwoLists(left, right);

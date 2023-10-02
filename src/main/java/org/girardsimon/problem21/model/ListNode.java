@@ -3,11 +3,8 @@ package org.girardsimon.problem21.model;
 import java.util.Objects;
 
 public class ListNode {
-    private int val;
+    private final int val;
     private ListNode next;
-
-    public ListNode() {
-    }
     public ListNode(int val) {
         this.val = val;
     }
@@ -18,10 +15,6 @@ public class ListNode {
 
     public int val() {
         return val;
-    }
-
-    public void setVal(int val) {
-        this.val = val;
     }
 
     public ListNode next() {
