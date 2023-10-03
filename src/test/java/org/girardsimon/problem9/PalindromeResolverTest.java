@@ -28,10 +28,10 @@ class PalindromeResolverTest {
     @ParameterizedTest
     @MethodSource("data")
     void isPalindrome_should_return_true_if_a_number_is_a_palindrome_and_false_otherwise(int num, boolean isPalindrome) {
-        //When
+        // Act
         boolean actual = PalindromeResolver.isPalindrome(num);
 
-        //Then
+        // Assert
         assertThat(actual).isEqualTo(isPalindrome);
     }
 

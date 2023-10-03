@@ -23,10 +23,10 @@ class TwoSumResolverTest {
     @MethodSource("data")
     void twoSum_should_return_indices_of_the_two_numbers_such_that_they_add_up_to_target(int[] nums, int target,
                                                                                          int[] expectedIndices) {
-        //When
+        // Act
         int[] actual = TwoSumResolver.twoSum(nums, target);
 
-        //Then
+        // Assert
         assertThat(actual).isEqualTo(expectedIndices);
     }
 }

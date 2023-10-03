@@ -35,10 +35,10 @@ class ListNodeResolverTest {
     @MethodSource("listNodes")
     void mergeTwoLists_should_merge_two_ListNode_into_one(ListNode left, ListNode right,
                                                           ListNode expected) {
-        //When
+        // Act
         ListNode actual = ListNodeResolver.mergeTwoLists(left, right);
 
-        //Then
+        // Assert
         assertThat(actual).isEqualTo(expected);
     }
 
