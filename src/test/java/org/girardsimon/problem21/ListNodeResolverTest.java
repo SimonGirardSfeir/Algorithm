@@ -10,7 +10,6 @@ import java.util.stream.Stream;
 import static org.assertj.core.api.Assertions.assertThat;
 
 class ListNodeResolverTest {
-
     private static Stream<Arguments> listNodes() {
         ListNode listNode1 = new ListNode(4);
         ListNode listNode2 = new ListNode(2, listNode1);

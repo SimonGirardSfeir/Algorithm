@@ -19,7 +19,6 @@ public final class ListNodeResolver {
             }
             current = current.next();
         }
-
         return startingNode.next();
     }
 }

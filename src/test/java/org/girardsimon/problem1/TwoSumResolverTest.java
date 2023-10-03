@@ -9,9 +9,7 @@ import java.util.stream.Stream;
 import static org.assertj.core.api.Assertions.assertThat;
 
 class TwoSumResolverTest {
-
     private static Stream<Arguments> data() {
-
         return Stream.of(
                 Arguments.of(new int[]{2,7,11,15}, 9,
                         new int[]{0,1}),
@@ -31,5 +29,4 @@ class TwoSumResolverTest {
         //Then
         assertThat(actual).isEqualTo(expectedIndices);
     }
-
 }
