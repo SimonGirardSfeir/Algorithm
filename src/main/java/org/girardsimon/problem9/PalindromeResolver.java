@@ -1,7 +1,8 @@
 package org.girardsimon.problem9;
 
+import static org.girardsimon.common.utils.Constants.DECIMAL;
+
 public final class PalindromeResolver {
-    private static final int DECIMAL = 10;
     private PalindromeResolver() {
     }
     public static boolean isPalindrome(int x){

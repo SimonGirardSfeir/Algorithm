@@ -1,9 +1,9 @@
 package org.girardsimon.problem21;
 
-import org.girardsimon.problem21.model.ListNode;
+import org.girardsimon.common.model.ListNode;
 
-public final class ListNodeResolver {
-    private ListNodeResolver() {
+public final class ListNodeMerger {
+    private ListNodeMerger() {
     }
     public static ListNode mergeTwoLists(ListNode left, ListNode right) {
         ListNode startingNode = new ListNode(0);

@@ -1,4 +1,4 @@
-package org.girardsimon.problem21.model;
+package org.girardsimon.common.model;
 
 import java.util.Objects;
 

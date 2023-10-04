@@ -1,6 +1,6 @@
 package org.girardsimon.problem21;
 
-import org.girardsimon.problem21.model.ListNode;
+import org.girardsimon.common.model.ListNode;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
@@ -9,7 +9,7 @@ import java.util.stream.Stream;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-class ListNodeResolverTest {
+class ListNodeMergerTest {
     private static Stream<Arguments> listNodes() {
         ListNode listNode1 = new ListNode(4);
         ListNode listNode2 = new ListNode(2, listNode1);
@@ -36,10 +36,9 @@ class ListNodeResolverTest {
     void mergeTwoLists_should_merge_two_ListNode_into_one(ListNode left, ListNode right,
                                                           ListNode expected) {
         // Act
-        ListNode actual = ListNodeResolver.mergeTwoLists(left, right);
+        ListNode actual = ListNodeMerger.mergeTwoLists(left, right);
 
         // Assert
         assertThat(actual).isEqualTo(expected);
     }
-
 }
