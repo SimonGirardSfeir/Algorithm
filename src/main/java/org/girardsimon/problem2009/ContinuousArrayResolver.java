@@ -28,7 +28,7 @@ public final class ContinuousArrayResolver {
             int currentRangeCoveredByArray = rangeCoveredByArrayLenghtStartingFromCurrentIndex - i;
             minimumOperation = Math.min(minimumOperation, numsLength - currentRangeCoveredByArray);
             //No need to iterate anymore, minimumOperation can't be lower than 0.
-            if(minimumOperation == 0) {
+            if(minimumOperation == 0 && rangeCoveredByArrayLenghtStartingFromCurrentIndex + i > nums.length) {
                 break;
             }
         }
