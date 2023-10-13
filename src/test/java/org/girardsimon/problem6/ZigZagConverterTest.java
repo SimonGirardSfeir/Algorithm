@@ -11,8 +11,25 @@ import static org.assertj.core.api.Assertions.assertThat;
 class ZigZagConverterTest {
     private static Stream<Arguments> data() {
         return Stream.of(
+
+                /*
+                    "PAYPALISHIRING" - 3
+                    ->
+                    P   A   H   N
+                    A P L S I I G
+                    Y   I   R
+                    Then read row by row.
+                 */
                 Arguments.of("PAYPALISHIRING", 3,
                         "PAHNAPLSIIGYIR"),
+                /*
+                    "PAYPALISHIRING" - 4
+                    ->
+                    P     I    N
+                    A   L S  I G
+                    Y A   H R
+                    P     I
+                 */
                 Arguments.of("PAYPALISHIRING", 4,
                         "PINALSIGYAHRPI"),
                 Arguments.of("A", 1,
