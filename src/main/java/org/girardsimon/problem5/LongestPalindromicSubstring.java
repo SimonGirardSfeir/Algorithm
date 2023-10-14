@@ -3,9 +3,15 @@ package org.girardsimon.problem5;
 public final class LongestPalindromicSubstring {
     private LongestPalindromicSubstring() {
     }
-    /*
-        1 <= s.length <= 1000
-        s consist of only digits and English letters.
+    /**
+     * Finds the longest palindrome in the given input string.
+     * <p>
+     * Constraints:<br>
+     * • 0 ≤ input.length ≤ 1000<br>
+     * • input consists of only digits and English letters.<br>
+     *
+     * @param input The input string to search for a palindrome.
+     * @return The longest palindrome substring found in the input string.
      */
     public static String longestPalindrome(String input) {
         int[] longestPalindrome = new int[] {0,0};

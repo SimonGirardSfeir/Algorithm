@@ -3,14 +3,16 @@ package org.girardsimon.problem4;
 public final class MedianTwoSortedArrayResolver {
     private MedianTwoSortedArrayResolver() {
     }
-    /*
-        numsLeft and numsRight are both sorted arrays
-        numsLeft.length == m
-        numsRight.length == n
-        0 <= m <= 1000
-        0 <= n <= 1000
-        1 <= m + n <= 2000
-        -10^6 <= numsLeft[i], numsRight[i] <= 10^6
+    /**
+     * This method takes two sorted arrays as input and finds the median of the merged array.
+     * <p>
+     * Constraints:<br>
+     * • Each array has a limited size of 1000<br>
+     * • -10⁶ ≤ numsLeft[i], numsRight[i] ≤ 10⁶<br>
+     *
+     * @param numsLeft the first sorted array
+     * @param numsRight the second sorted array
+     * @return the median of the merged array
      */
     public static double findMedianSortedArrays(int[] numsLeft, int[] numsRight) {
         int m = numsLeft.length;

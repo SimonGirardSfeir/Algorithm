@@ -3,10 +3,21 @@ package org.girardsimon.problem6;
 public final class ZigZagConverter {
     private ZigZagConverter() {
     }
-    /*
-        1 <= input.length <= 1000
-        input consists of English letters (lower-case and upper-case), ',' and '.'.
-        1 <= numRows <= 1000
+    /**
+     * <p>
+     * Converts a given input string into a zigzag pattern based on the number of rows.
+     * The zigzag pattern starts from the top row, goes down to the bottom row,
+     * then goes back up to the top row, and so on.
+     * </p>
+     * <p>
+     * Constraints:<br>
+     *  • 0 ≤ input.length ≤ 1000<br>
+     *  • input consists of English letters (lower-case and upper-case), ',' and '.'.<br>
+     *  • 1 ≤ numRows ≤ 1000<br>
+     *
+     * @param input the input string to be converted
+     * @param numRows the number of rows in the zigzag pattern
+     * @return the converted string in zigzag pattern
      */
     public static String convert(String input, int numRows) {
         if(numRows == 1 || numRows > input.length()) {

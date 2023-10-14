@@ -5,9 +5,24 @@ import java.util.Arrays;
 public final class ContinuousArrayResolver {
     private ContinuousArrayResolver() {
     }
-    /*
-        1 <= nums.length <= 10^5
-        1 <= nums[i] <= 10^9
+    /**<p>
+     * Finds the minimum number of operations required to make the array in input
+     * <strong style="text-decoration:underline;">continuous</strong>.
+     * What is a <strong style="text-decoration:underline;">continuous</strong> array?</p>
+     * <p>
+     * nums is <strong style="text-decoration:underline;">continuous</strong> if:<br>
+     * • All elements in nums are unique<br>
+     * • The difference between the <strong>maximum</strong> element and the
+     * <strong>minimum</strong> element in nums equals nums.length - 1.<br>
+     * </p>
+     * <p>
+     * Constraints:<br>
+     * • 1 ≤ nums.length ≤ 10⁵<br>
+     * • 1 ≤ nums[i] ≤ 10⁹<br>
+     *
+     *
+     * @param nums The input array of integers.
+     * @return The minimum number of operations required to make the input continuous.
      */
     public static int minOperations(int[] nums) {
         int numsLength = nums.length;
