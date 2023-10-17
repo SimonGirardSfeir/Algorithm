@@ -34,29 +34,29 @@ public final class ContinuousArrayResolver {
                 .distinct()
                 .sorted()
                 .toArray();
-        int rangeCoveredByArrayLenghtStartingFromCurrentIndex = 0;
+        int rangeCoveredByArrayLengthStartingFromCurrentIndex = 0;
         for(int i = 0; i < uniqueNums.length; i++) {
-            rangeCoveredByArrayLenghtStartingFromCurrentIndex =
-                    getRangeCoveredByArrayLength(rangeCoveredByArrayLenghtStartingFromCurrentIndex,
+            rangeCoveredByArrayLengthStartingFromCurrentIndex =
+                    getRangeCoveredByArrayLength(rangeCoveredByArrayLengthStartingFromCurrentIndex,
                             uniqueNums,
                             i, numsLength);
-            int currentRangeCoveredByArray = rangeCoveredByArrayLenghtStartingFromCurrentIndex - i;
+            int currentRangeCoveredByArray = rangeCoveredByArrayLengthStartingFromCurrentIndex - i;
             minimumOperation = Math.min(minimumOperation, numsLength - currentRangeCoveredByArray);
             //No need to iterate anymore, minimumOperation can't be lower than 0.
-            if(minimumOperation == 0 && rangeCoveredByArrayLenghtStartingFromCurrentIndex + i > nums.length) {
+            if(minimumOperation == 0 && rangeCoveredByArrayLengthStartingFromCurrentIndex + i > nums.length) {
                 break;
             }
         }
         return minimumOperation;
     }
 
-    private static int getRangeCoveredByArrayLength(int rangeCoveredByArrayLenghtStartingFromCurrentIndex,
+    private static int getRangeCoveredByArrayLength(int rangeCoveredByArrayLengthStartingFromCurrentIndex,
                                                     int[] nums, int i, int numsLength) {
-        while (rangeCoveredByArrayLenghtStartingFromCurrentIndex <
+        while (rangeCoveredByArrayLengthStartingFromCurrentIndex <
                 nums.length &&
-                nums[rangeCoveredByArrayLenghtStartingFromCurrentIndex] < nums[i] + numsLength) {
-            rangeCoveredByArrayLenghtStartingFromCurrentIndex++;
+                nums[rangeCoveredByArrayLengthStartingFromCurrentIndex] < nums[i] + numsLength) {
+            rangeCoveredByArrayLengthStartingFromCurrentIndex++;
         }
-        return rangeCoveredByArrayLenghtStartingFromCurrentIndex;
+        return rangeCoveredByArrayLengthStartingFromCurrentIndex;
     }
 }
